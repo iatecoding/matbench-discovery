@@ -17,10 +17,10 @@
 | **Geometry `RMSD` ↓** | **0.0764** (`0.0169` matched) | `scripts/analyze_geo_opt.py` method (`StructureMatcher(stol=1.0, scale=False)`, `0.0059` median, `93.9%` matched) |
 | **Symmetry match ↑** | **81.4%** (`symprec=1e-2`) | `5.4%` decrease, `12.5%` increase; `70.1%` match at `symprec=1e-5` |
 | **Phonons `κ_SRME` ↓** | **0.3803** | 103 PhononDB crystals (`κ_SRE = 0.2114`, `κ_SRD = -0.1162`, `0%` imaginary/failed) |
-| **Molecular Dynamics `CMDS` ↑** | **0.7550** | 17 DynaMat NVT systems (`2,824 s` on M3 Max; `RDF = 4.10%`, `ADF = 1.78%`, `vDOS = 24.07%`, `P_err = 56.40%`) |
+| **Molecular Dynamics `CMDS` ↑** | **0.7550** | 17 DynaMat NVT systems, batched on one M3 Max 36GB (`5,390 s` at 80,000 steps per system, scaled from a measured `2,824 s` run, see yml `notes.md`; `RDF = 4.10%`, `ADF = 1.78%`, `vDOS = 24.07%`, `P_err = 56.40%`) |
 | **Diatomics `CDS` ↑** | **0.5402** | Homo-nuclear diatomics (`2.0 s` on M3 Max; `73/73` valid elements) |
-| **Peak Memory per Atom ↓** | **0.66 MB/atom** (A100) / **0.86 MB/atom** (M3 Max) | Diamond (`r_cut = 6.0 Å`, 158 neighbors/atom, E+F+S) |
-| **Inference Speed ↑** | **16.5 atoms/ms** (E+F+S) / **78.2 atoms/ms** (Forces) | Compiled (`torch.compile`), linear scaling to 49k atoms on 40GB A100 |
+| **Peak Memory per Atom ↓** | **0.82 MB/atom** (M3 Max 36GB) | Diamond (`r_cut = 6.0 Å`, 158 neighbors/atom, E+F+S), 13.4 GB at 16,456 atoms |
+| **Inference Speed ↑** | **16.8 atoms/ms** (E+F+S, M3 Max 36GB) | DPA4 diamond protocol, compiled (`torch.compile`), saturated from 2k atoms, linear to 16k atoms |
 
 ## Contact
 
