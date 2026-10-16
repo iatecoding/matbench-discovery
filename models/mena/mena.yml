@@ -65,8 +65,7 @@ notes:
     iterations and tests, trained on MPtrj for 15.5 hours on a single NVIDIA A100-SXM4-40GB
     (40GB) GPU and evaluated locally on Apple M3 Max (36GB). There are still speed optimizations
     and minor architecture improvements planned, and training was stopped early due to limited
-    computational resources. This was done as an independent work, without further human
-    assistance. I am open to any inquiries or questions at
+    computational resources. This was done as independent work. I am open to any inquiries or questions at
     francesco.viola001@studenti.uniparthenope.it.
 metrics:
   discovery:
@@ -109,6 +108,28 @@ metrics:
       url: https://figshare.com/files/70175772
       size: 165520757
       md5: d0cf3fe3bf9ebeab117a9d60d9fe8118
+    symprec=1e-2:
+      rmsd: 0.0764
+      n_sym_ops_mae: 1.7699
+      symmetry_decrease: 0.0543
+      symmetry_match: 0.8136
+      symmetry_increase: 0.1247
+      n_structures: 256963
+      analysis_file:
+        name: models/mena/mena/2026-10-16-geo-opt-symprec=1e-2-moyo=0.21.0.csv.gz
+        size: 6838948
+        md5: ef1cfb17c8e50b019c20c1ba8a44905c
+    symprec=1e-5:
+      rmsd: 0.0764
+      n_sym_ops_mae: 2.0428
+      symmetry_decrease: 0.056
+      symmetry_match: 0.7006
+      symmetry_increase: 0.2377
+      n_structures: 256963
+      analysis_file:
+        name: models/mena/mena/2026-10-16-geo-opt-symprec=1e-5-moyo=0.21.0.csv.gz
+        size: 6856101
+        md5: fcd115c2b787cc7827cbdabf27a188a1
   phonons:
     kappa_103:
       pred_file:

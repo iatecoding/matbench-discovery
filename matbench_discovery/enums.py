@@ -327,6 +327,7 @@ class Model(Files, base_dir=f"{ROOT}/models"):
     matris_v050_mptrj = auto(), "matris/matris-v050-mptrj.yml"
     mattersim_v1_5m = auto(), "mattersim/mattersim-v1-5m.yml"
     megnet = auto(), "megnet/megnet.yml"
+    mena = auto(), "mena/mena.yml"
     nequip_mp_l_0_1 = auto(), "nequip/nequip-mp-l-0.1.yml"
     nequip_oam_l_0_1 = auto(), "nequip/nequip-oam-l-0.1.yml"
     nequip_oam_xl_0_1 = auto(), "nequip/nequip-oam-xl-0.1.yml"

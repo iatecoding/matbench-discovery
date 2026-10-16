@@ -8,13 +8,14 @@
 
 | Task / Metric | Official Result | Notes |
 | --- | ---: | --- |
-| **Combined Performance Score (`CPS` ↑)** | **0.7859** | Official leaderboard formula (`fillna=1.0` RMSD) |
+| **Combined Performance Score (`CPS` ↑)** | **0.7846** | Official leaderboard formula (`fillna=1.0` RMSD) |
 | **Discovery `F1` ↑** | **0.8232** | Official WBM leaderboard set (`215,488` unique prototypes) |
 | **Discovery `DAF` ↑** | **5.1904** | Discovery Acceleration Factor |
 | **Precision / Recall ↑** | **0.7935 / 0.8552** | `TP = 28,173`, `FP = 7,333`, `TN = 175,213`, `FN = 4,769` |
 | **Accuracy ↑** | **0.9438** | Overall stability classification accuracy |
 | **Formation Energy `MAE` / `RMSE` ↓** | **0.0339 / 0.0761 eV/atom** | Hull distance `R² = 0.8290` |
-| **Geometry `RMSD` ↓** | **0.0744** (`0.0172` matched) | `StructureMatcher(stol=1.0)` (`0.0059` median, `91.1%` spacegroup match) |
+| **Geometry `RMSD` ↓** | **0.0764** (`0.0169` matched) | `scripts/analyze_geo_opt.py` method (`StructureMatcher(stol=1.0, scale=False)`, `0.0059` median, `93.9%` matched) |
+| **Symmetry match ↑** | **81.4%** (`symprec=1e-2`) | `5.4%` decrease, `12.5%` increase; `70.1%` match at `symprec=1e-5` |
 | **Phonons `κ_SRME` ↓** | **0.3803** | 103 PhononDB crystals (`κ_SRE = 0.2114`, `κ_SRD = -0.1162`, `0%` imaginary/failed) |
 | **Molecular Dynamics `CMDS` ↑** | **0.7550** | 17 DynaMat NVT systems (`2,824 s` on M3 Max; `RDF = 4.10%`, `ADF = 1.78%`, `vDOS = 24.07%`, `P_err = 56.40%`) |
 | **Diatomics `CDS` ↑** | **0.5402** | Homo-nuclear diatomics (`2.0 s` on M3 Max; `73/73` valid elements) |
