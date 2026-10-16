@@ -1,5 +1,5 @@
-model_name: Mena-Preview
-model_key: mena-preview
+model_name: Mena
+model_key: mena
 model_version: 0.1.0
 dates:
   benchmark_added: '2026-10-16'
@@ -59,19 +59,19 @@ hyperparams:
     optimizer: Muon + AdamW
 notes:
   description: >
-    Mena-Preview is a 2.66M-parameter model with a smooth 6.0 A radial cutoff
+    Mena is a 2.66M-parameter model with a smooth 6.0 A radial cutoff
     (smoothly tapering neighbor interactions between 5.0 A and 6.0 A so that energies
     and forces go continuously to zero as atoms cross the cutoff radius). After many
     iterations and tests, trained on MPtrj for 15.5 hours on a single NVIDIA A100-SXM4-40GB
-    (40GB) GPU and evaluated locally on Apple M3 Max (36GB). I named it Mena-Preview
-    because there are still speed optimizations and minor architecture improvements planned,
-    and training was stopped early due to limited computational resources. This was done
-    as an independent work, without further human assistance. I am open to any inquiries
-    or questions at francesco.viola001@studenti.uniparthenope.it.
+    (40GB) GPU and evaluated locally on Apple M3 Max (36GB). There are still speed optimizations
+    and minor architecture improvements planned, and training was stopped early due to limited
+    computational resources. This was done as an independent work, without further human
+    assistance. I am open to any inquiries or questions at
+    francesco.viola001@studenti.uniparthenope.it.
 metrics:
   discovery:
     pred_file:
-      name: models/mena/mena-preview/2026-10-16-discovery.csv.gz
+      name: models/mena/mena/2026-10-16-discovery.csv.gz
       url: https://figshare.com/files/70175763
       size: 1328242
       md5: ae681a3da97d8267e876f93f5479476f
@@ -105,14 +105,14 @@ metrics:
       missing_preds: 0
   geo_opt:
     pred_file:
-      name: models/mena/mena-preview/2026-10-16-geo-opt.jsonl.gz
+      name: models/mena/mena/2026-10-16-geo-opt.jsonl.gz
       url: https://figshare.com/files/70175772
       size: 165520757
       md5: d0cf3fe3bf9ebeab117a9d60d9fe8118
   phonons:
     kappa_103:
       pred_file:
-        name: models/mena/mena-preview/2026-10-16-phonons-kappa-103.json.gz
+        name: models/mena/mena/2026-10-16-phonons-kappa-103.json.gz
         url: https://figshare.com/files/70175766
         size: 15420640
         md5: 2e7618466e117cf9b4e198bedba4607f
@@ -124,7 +124,7 @@ metrics:
       spectrum_w1: 0.2122
   diatomics:
     pred_file:
-      name: models/mena/mena-preview/2026-10-16-diatomics.json.gz
+      name: models/mena/mena/2026-10-16-diatomics.json.gz
       url: https://figshare.com/files/70175760
       size: 134938
       md5: 60ed9c05f1b469405732530c5f7fbd85
