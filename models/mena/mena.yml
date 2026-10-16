@@ -147,3 +147,18 @@ metrics:
       n_eligible: 73
       failed_elements: []
       missing_elements: []
+  md:
+    pred_file:
+      name: models/mena/mena/2026-10-16-md-metrics.csv.gz
+      url: https://figshare.com/files/70175769
+      size: 1549
+      md5: 73cda31ba4c50f8cda77167d906ded4e
+    hardware: Apple M3 Max (36GB)
+    run_time_sec: 2824.26
+    rdf_error: 4.0956
+    adf_error: 1.7766
+    vdos_error: 24.0703
+    pressure_mae: 0.8281
+    pressure_wasserstein: 0.8374
+    pressure_error: 56.4031
+    n_systems: 17
