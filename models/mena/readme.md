@@ -16,7 +16,7 @@
 | **Formation Energy `MAE` / `RMSE` ↓** | **0.0339 / 0.0761 eV/atom** | Hull distance `R² = 0.8290` |
 | **Geometry `RMSD` ↓** | **0.0744** (`0.0172` matched) | `StructureMatcher(stol=1.0)` (`0.0059` median, `91.1%` spacegroup match) |
 | **Phonons `κ_SRME` ↓** | **0.3803** | 103 PhononDB crystals (`κ_SRE = 0.2114`, `κ_SRD = -0.1162`, `0%` imaginary/failed) |
-| **Molecular Dynamics `CMDS` ↑** | **0.6574** | 17 DynaMat NVT systems (`2,824 s` on M3 Max; `RDF = 4.10%`, `ADF = 1.78%`, `vDOS = 24.07%`, `P_err = 56.40%`) |
+| **Molecular Dynamics `CMDS` ↑** | **0.7550** | 17 DynaMat NVT systems (`2,824 s` on M3 Max; `RDF = 4.10%`, `ADF = 1.78%`, `vDOS = 24.07%`, `P_err = 56.40%`) |
 | **Diatomics `CDS` ↑** | **0.5402** | Homo-nuclear diatomics (`2.0 s` on M3 Max; `73/73` valid elements) |
 | **Peak Memory per Atom ↓** | **0.66 MB/atom** (A100) / **0.86 MB/atom** (M3 Max) | Diamond (`r_cut = 6.0 Å`, 158 neighbors/atom, E+F+S) |
 | **Inference Speed ↑** | **16.5 atoms/ms** (E+F+S) / **78.2 atoms/ms** (Forces) | Compiled (`torch.compile`), linear scaling to 49k atoms on 40GB A100 |
